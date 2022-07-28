@@ -88,6 +88,145 @@
     }
   }
 
+} 
+ 
+.footer {
+  background: $white;
+
+  .footer-top {
+    padding: 80px 0 75px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #dae4e9;
+
+
+    &__contact {
+      width: 220px;
+      margin-right: 80px; 
+    }
+
+    &__logo {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &__adress,
+    &__phone,
+    &__email {
+      display: block;
+      margin-bottom: 20px;
+      @extend %rubik-400;
+      color: #7b7b7b;
+    }
+
+    &__services, 
+    &__account { 
+      width: 130px;  
+      padding-top: 9px; 
+      margin-right: 175px;
+    }  
+     
+  
+     
+    &__link {
+      @extend %rubik-400;
+      font-size: 14px;
+      color: $footer-text-color;
+      // margin-bottom: 20px;
+    } 
+      
+    &__item{ 
+      margin-bottom: 9px;
+    }
+
+      &__title {
+        @extend %dmsans-700; 
+        font-size: 16px;
+        color: $footer-title;
+        margin-bottom: 25px; 
+        text-transform: uppercase;
+      }
+        
+      &__item-form{ 
+        padding-top: 9px;   
+        width:275px;
+       
+      } 
+
+      &__text{ 
+        @extend %rubik-400; 
+        font-size: 14px; 
+        line-height: 24px; 
+        color: $footer-text-color; 
+        margin-bottom: 40px;
+      }  
+       
+       &__form{ 
+         display: flex;
+       } 
+
+     &__form-input{ 
+       max-width: 170px; 
+       background: #fef7f0; 
+       border: none; 
+       padding: 15px 16px; 
+      
+      &::placeholder { 
+        @extend %dmsans-400; 
+        color: #234969; 
+        font-size: 14px;
+      }
+     } 
+      
+     &__form-btn{ 
+      width: 100px; 
+      padding: 14px 19px 14px 15px; 
+      background-color: $accent; 
+      color: $white;
+     } 
+
+  } 
+  
+   .footer-bottom{ 
+    padding: 37px 0 40px;  
+    display: flex; 
+    justify-content: space-between;
+      
+    &__copy{  
+      @extend %rubik-400; 
+      font-size: 14px; 
+      line-height: 32px; 
+      color: $footer-text-color;
+    }   
+     
+    &__menu{ 
+      height: 15px;
+    }
+      
+    &__menu-list{  
+      display: flex;
+    } 
+      
+    &__menu-item{ 
+      padding: 0 15px; 
+      border-right: 1px solid $footer-text-color; 
+    }  
+
+    &__menu-item--special{ 
+      padding: 0 0 0 15px; 
+      border-right: none;
+    }   
+
+    &__menu-link{ 
+      @extend %rubik-400; 
+      font-size: 14px; 
+      line-height: 32px; 
+      color: $footer-text-color;
+    }
+
+   }
+    
+ 
 }
 
 @import 'media';  
