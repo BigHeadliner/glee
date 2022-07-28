@@ -1,0 +1,94 @@
+@import 'vars'; 
+@import 'fonts';   
+@import 'reset';  
+@import 'global';    
+ 
+ 
+.header {
+  padding: 50px 0 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    margin-left: 36px;
+  }
+
+  &__list-link {
+    color: #436372;
+    font-size: 15px;
+    line-height: 12px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__num {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: $white;
+    color: $default;
+    font-size: 10px;
+    text-align: center;
+    line-height: 17px;
+    @extend %dmsans-400;
+    position: absolute;
+    top: 9px;
+    left: 27px;
+  }
+
+
+  &__link--search {
+    background: #edf1f4;
+  }
+
+  &__link--user {
+    background: #a3bbc8;
+  }
+
+  &__like-vs-cart {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+    width: 178px;
+    background-color: #fcd7b6;
+    border-radius: 22px;
+    position: relative;
+
+    .like-vs-car__border {
+      width: 1px;
+      height: 32px;
+      background: #fde7d3;
+      position: absolute;
+      top: 9px;
+    }
+  }
+
+}
+
+@import 'media';  
+
