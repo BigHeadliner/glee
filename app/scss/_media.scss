@@ -1,0 +1,44 @@
+ 
+  
+  @media(max-width: 1280px){   
+
+    .benefits{  
+     &__items{  
+      justify-content: space-around;
+     }
+     &__item{ 
+      padding: 0;   
+      width: 318px; 
+      height: 170px;
+      border: 2px solid $accent;  
+      border: 1px solid transparent; 
+      padding-top: 9px;
+      text-align: center;
+     } 
+     &__item-title{ 
+      margin-bottom: 70px;
+     }    
+
+     &__item-text{ 
+        width: auto; 
+        line-height: 21px;
+       }  
+
+     &__item-img{  
+        position: absolute; 
+        top: 35%;
+        left: 42%;
+     } 
+   
+     &__item-img-bordered{  
+        position: absolute; 
+        top: 39%;
+        left: 40%;
+     }
+
+     &__text{ 
+        margin-bottom: 47px;
+      }
+    }
+   
+  }
