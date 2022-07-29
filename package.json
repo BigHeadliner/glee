@@ -21,6 +21,7 @@
     "sass": "^1.53.0"
   },
   "dependencies": {
-    "save-dev": "^0.0.1-security"
+    "save-dev": "^0.0.1-security",
+    "slick-carousel": "^1.8.1"
   }
 }

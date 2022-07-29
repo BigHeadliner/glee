@@ -1,6 +1,7 @@
 @import 'vars'; 
 @import 'fonts';   
-@import 'reset';  
+@import 'reset';   
+@import 'slick';   
 @import 'global';    
  
  
@@ -200,16 +201,23 @@
     }   
      
     &__menu{ 
-      height: 15px;
+      border: 1px solid transparent; 
+      display: flex;  
+      align-items: center;
     }
       
     &__menu-list{  
-      display: flex;
+      display: flex;  
+      align-items: center;
+      border: 1px solid transparent; 
     } 
       
     &__menu-item{ 
-      padding: 0 15px; 
-      border-right: 1px solid $footer-text-color; 
+      padding: 0 15px;  
+      height: 15px; 
+      border-right: 1px solid $footer-text-color;   
+      display: flex;  
+      align-items: center; 
     }  
 
     &__menu-item--special{ 
@@ -220,14 +228,107 @@
     &__menu-link{ 
       @extend %rubik-400; 
       font-size: 14px; 
-      line-height: 32px; 
+      line-height: 32px;  
+      display:inline-block;
       color: $footer-text-color;
     }
 
    }
     
  
+} 
+ 
+.top-slider{ 
+  background-color:#fcd7b6; 
+  background-image: url('../images/top-slider-bg.jpg');  
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  
+  &__slider{ 
+    border: 1px solid transparent;
+   } 
+
+ &__inner{ 
+  display: flex !important; 
+  align-items: flex-end; 
+  justify-content: space-between;  
+  padding: 225px 0 199px; 
+  border: 1px solid transparent;
+ }  
+  
+ &__title{ 
+   max-width: 415px; 
+   font-size: 72px; 
+   line-height: 70px; 
+   margin-bottom: 45px;
+ }
+ 
+ &__text{  
+   max-width: 370px; 
+   @extend %rubik-400; 
+   font-size: 18px; 
+   line-height: 30px; 
+   color: #436372; 
+   margin-bottom: 45px;
+ }  
+  
+ &__link{ 
+  padding: 25px 19px 20px 27px;    
+  position: relative;
+  color: $white;  
+  font-size: 15px; 
+  line-height: 12px;
+  background-color: $accent;  
+  display: inline-block;
+  width: 200px;  
+ }  
+  
+ &__link-arrow{ 
+  position: absolute; 
+  top: 25px; 
+  right: 19px;
+ }
+  
+ &__img{ 
+  height: 263px;
+ }  
+  
+ .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+
+  li {
+    padding: 0 7px;
+
+    button {
+      background-color: $white;
+      opacity: 0.3; 
+      width: 30px; 
+      height: 30px; 
+      border-radius: 50%; 
+      padding-bottom: 7px;
+      border: 1px solid transparent; 
+      color: $default;
+    }
+  } 
+    
+  .slick-active{ 
+    button { 
+      opacity: 1;
+    }
+  }
+}  
+ 
+
+    
 }
+ 
+  
+
+ 
+
+
 
 @import 'media';  
 
