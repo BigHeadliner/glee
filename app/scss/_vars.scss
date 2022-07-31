@@ -44,4 +44,11 @@ $benefits-text-color: #585858;
     @extend %rubik-500; 
     font-size: 15px;
     line-height: 12px;
+} 
+ 
+@function max($numbers...) { 
+  @return m#{a}x(#{$numbers});
+ }
+@function min($numbers...) { 
+  @return m#{i}n(#{$numbers});
 }
