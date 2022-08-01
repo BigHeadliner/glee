@@ -29,4 +29,10 @@
   max-width: 1770px;
   margin: 0 auto;
   padding: 0 15px;
+} 
+ 
+.title-h3{ 
+  @extend %dmsans-700; 
+  font-size: 36px; 
+  color:$h3-title;
 }
